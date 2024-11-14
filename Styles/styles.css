@@ -12,6 +12,7 @@
 
 header {
   position: fixed;
+  height: auto;
   width: 100%;
   top: 0;
   right: 0;
@@ -19,12 +20,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 100px;
+  padding: 10px 100px;
   background-color: white;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 header .logo {
   border-radius: 50%;
-  width: 100px;
+  width: 80px;
 }
 header .bx {
   font-size: 50px;
@@ -34,13 +37,15 @@ header .navbar {
   display: flex;
 }
 header .navbar a {
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px 20px;
-  color: #1A1B1E;
+  color: rgb(26, 27, 30);
   font-weight: 500;
 }
 header .navbar a:hover {
-  color: #205831;
+  color: rgb(32, 88, 49);
+  border-top: solid 1px;
+  border-color: rgb(32, 88, 49);
 }
 header #menu-icon {
   cursor: pointer;
@@ -48,46 +53,56 @@ header #menu-icon {
 }
 
 main .hero-img {
-  margin-top: 140px;
+  margin-top: 106px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/hero-img.jpg);
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10% 20% 10% 60%;
   gap: 20px;
 }
-main .hero-img .hero-text {
+main .hero-img .hero-content {
+  display: flex;
+  flex-direction: column;
+}
+main .hero-img .hero-content .hero-text {
   color: #D8D3D7;
   text-align: center;
   padding-bottom: 20px;
 }
-main .hero-img .hero-text h1 {
+main .hero-img .hero-content .hero-text h1 {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
 }
-main .hero-img .hero-text h3 {
+main .hero-img .hero-content .hero-text h3 {
   font-weight: 300;
+  padding-bottom: 20px;
 }
-main .hero-btn {
+main .hero-img .hero-content .hero-btn {
   align-items: center;
   text-align: center;
   color: #D8D3D7;
   padding: 10px;
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 50px;
+  margin: 0 30px;
+}
+main .hero-img .hero-content .hero-btn:hover {
+  background-color: rgba(255, 255, 255, 0.164);
 }
 main .about {
   display: flex;
   flex-direction: row;
-  gap: 10%;
-  padding: 0 15%;
+  gap: 15%;
+  padding: 0 20%;
   background-color: rgb(255, 255, 255);
   margin-top: 100px;
   height: 500px;
