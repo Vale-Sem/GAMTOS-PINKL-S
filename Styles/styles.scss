@@ -140,4 +140,45 @@ main {
       border-radius: 3%;
     }
   }
+
+  .service {
+    margin-top: 106px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/Images/service.jpg);
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+
+    h2 {
+      color: white;
+      padding-top: 5%;
+      text-align: center;
+      font-weight: 700;
+    font-size: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      padding: 3% 10%;
+      gap: 10%;
+
+      .card {
+        background-color: white;
+        color: $textColor;
+        text-align: justify;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+
+        h3 {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
 }
