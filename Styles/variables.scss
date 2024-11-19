@@ -6,4 +6,19 @@
 $primaryColor:#1E2821;
 $hoverColor:rgb(32, 88, 49);
 $secondaryColor:#D8D3D7;
-$textColor:rgb(26, 27, 30);
+$textColor:rgb(44, 44, 44);
+
+//Mixins
+
+@mixin btn {
+background-color: #65564d;
+color: white;
+font-size: 16px;
+border-radius:30px;
+padding: 10px 20px;
+}
+
+@mixin btn-hover{
+    background-color: #534841;
+
+}
