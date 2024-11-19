@@ -102,11 +102,11 @@ main .hero-img .hero-content .hero-btn:hover {
 main .about {
   display: flex;
   flex-direction: row;
-  gap: 15%;
+  gap: 10%;
   padding: 0 20%;
   background-color: rgb(255, 255, 255);
   margin-top: 100px;
-  height: 500px;
+  height: auto;
 }
 main .about .about-text {
   display: flex;
@@ -123,8 +123,8 @@ main .about .about-text p {
   padding-bottom: 20px;
 }
 main .about img {
-  height: 400px;
   border-radius: 5px;
+  width: 40%;
 }
 main .service {
   margin-top: 106px;
@@ -180,7 +180,7 @@ main .service .cards .card a:hover {
 footer .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 3% 3% 0;
+  padding: 3%;
 }
 footer .footer-content .navbar a {
   font-size: 16px;
