@@ -39,7 +39,7 @@ header .navbar {
 header .navbar a {
   font-size: 18px;
   padding: 10px 20px;
-  color: rgb(26, 27, 30);
+  color: rgb(44, 44, 44);
   font-weight: 500;
 }
 header .navbar a:hover {
@@ -94,6 +94,7 @@ main .hero-img .hero-content .hero-btn {
   border: solid 1px;
   border-radius: 50px;
   margin: 0 30px;
+  font-size: 16px;
 }
 main .hero-img .hero-content .hero-btn:hover {
   background-color: rgba(255, 255, 255, 0.164);
@@ -150,13 +151,63 @@ main .service .cards {
   gap: 10%;
 }
 main .service .cards .card {
-  background-color: white;
-  color: rgb(26, 27, 30);
-  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  color: rgb(44, 44, 44);
   text-align: center;
-  padding: 20px;
+  justify-content: end;
+  padding: 20px 30px;
   border-radius: 20px;
 }
 main .service .cards .card h3 {
   padding-bottom: 20px;
+}
+main .service .cards .card p {
+  padding-bottom: 20px;
+}
+main .service .cards .card a {
+  background-color: #65564d;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+main .service .cards .card a:hover {
+  background-color: #534841;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 3% 0;
+}
+footer .footer-content .navbar a {
+  font-size: 16px;
+  color: rgb(44, 44, 44);
+  font-weight: 400;
+}
+footer .footer-content .navbar a:hover {
+  color: rgb(32, 88, 49);
+}
+footer .footer-content p {
+  font-size: 16px;
+  color: rgb(44, 44, 44);
+  text-align: justify;
+}
+footer .footer-content a {
+  font-size: 16px;
+  color: rgb(44, 44, 44);
+  font-weight: 400;
+}
+footer .email-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: rgb(44, 44, 44);
+}
+footer .footer-end-text p {
+  padding: 10px;
+  text-align: center;
+  color: rgb(44, 44, 44);
 }/*# sourceMappingURL=styles.css.map */
