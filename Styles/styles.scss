@@ -22,13 +22,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 100px;
+  padding: 0 10%;
   background-color: white;
   min-height: fit-content;
 
   .logo {
-    border-radius: 50%;
-    width: 80px;
+    width: 130px;
   }
 
   .bx {
@@ -137,8 +136,8 @@ main {
     }
 
     img {
-      border-radius: 5px;  
-      width:40%;
+      border-radius: 5px;
+      width: 40%;
     }
   }
 
@@ -165,7 +164,7 @@ main {
     .cards {
       display: flex;
       justify-content: center;
-      padding: 3% 10%;
+      padding: 5% 10% 10%;
       gap: 10%;
 
       .card {
@@ -200,7 +199,7 @@ footer {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    padding:3%;
+    padding: 3%;
 
     .navbar {
       a {
@@ -219,12 +218,12 @@ footer {
     }
     a {
       font-size: 16px;
-        color: $textColor;
-        font-weight: 400;
+      color: $textColor;
+      font-weight: 400;
     }
   }
-  .email-icons i{
-    padding:10px 0px;
+  .email-icons i {
+    padding: 10px 0px;
     font-size: 30px;
     color: $textColor;
   }
@@ -236,3 +235,57 @@ footer {
     }
   }
 }
+
+@media (max-width: 960px) {
+  header {
+    padding: 0 3%;
+  }
+}
+
+main {
+  .hero-img {
+    padding: 15%;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      display: none;
+    }
+  }
+
+  .service {
+    .cards {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+footer {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    .navbar {
+      display: none;
+    }
+    p{
+      text-align: center;
+
+    }
+  }
+  .email-icons{
+    text-align: center;
+  }
+}
+
+@media (max-width: 830px) {
+  header {
+    .navbar{
+      display: none;
+    }
+  }
+}
+

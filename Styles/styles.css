@@ -20,14 +20,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 100px;
+  padding: 0 10%;
   background-color: white;
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
 header .logo {
-  border-radius: 50%;
-  width: 80px;
+  width: 130px;
 }
 header .bx {
   font-size: 50px;
@@ -147,7 +146,7 @@ main .service h2 {
 main .service .cards {
   display: flex;
   justify-content: center;
-  padding: 3% 10%;
+  padding: 5% 10% 10%;
   gap: 10%;
 }
 main .service .cards .card {
@@ -209,4 +208,44 @@ footer .footer-end-text p {
   padding: 10px;
   text-align: center;
   color: rgb(44, 44, 44);
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 0 3%;
+  }
+}
+main .hero-img {
+  padding: 15%;
+}
+main .about {
+  flex-direction: column;
+  align-items: center;
+}
+main .about img {
+  display: none;
+}
+main .service .cards {
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer .footer-content {
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-content .navbar {
+  display: none;
+}
+footer .footer-content p {
+  text-align: center;
+}
+footer .email-icons {
+  text-align: center;
+}
+
+@media (max-width: 830px) {
+  header .navbar {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
